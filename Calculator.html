@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <p class="calculation">
+    
+  </p>
+  <p>
+  <button class="number-key" onclick="9
+    input(1);
+    ">1</button>
+  <button class="number-key" onclick="
+    input(2);
+  ">2</button>
+  <button class="number-key" onclick="
+    input(3);
+  ">3</button>
+  <button class="number-key calculation-key" onclick="
+    input(' + ');
+  ">+</button>
+  </p>
+  <p>
+  <button class="number-key" onclick="
+    input(4);
+    ">4</button>
+  <button class="number-key" onclick="
+    input(5);
+  ">5</button>
+  <button class="number-key" onclick="
+    input(6);
+  ">6</button>
+  <button class="number-key calculation-key" onclick="
+    input(' - ');
+  ">-</button>
+  </p>
+  <p>
+  <button class="number-key" onclick="
+    input(7);
+    ">7</button>
+  <button class="number-key" onclick="
+    input(8);
+  ">8</button>
+  <button class="number-key" onclick="
+    input(9);
+  ">9</button>
+  <button class="number-key calculation-key" onclick="
+    input(' * ');
+  ">*</button>
+  </p>
+  <p>
+  <button class="number-key" onclick="
+    input(0);
+    ">0</button>
+  <button class="number-key" onclick="
+    input('.');
+    ">.</button>
+    <button  class="number-key" onclick="
+    // calculation = eval(calculation) || 'No Input';
+    // localStorage.setItem('calculation',JSON.stringify(calculation));
+    
+    // calculation = JSON.parse(localStorage.getItem('calculation')) || 'No Input';
+    // console.log(calculation);
+    
+    // calculation = JSON.stringify(calculation);
+
+        // this  will evaluate the things in the string.
+        calculation = eval(calculation);
+        console.log(calculation);
+        ShowCalculation(calculation);
+        // then we save the calculation in the localStorage again
+        // Remember to save the calculation here.
+        saveCalculation();
+    ">=</button>
+  <button class="number-key calculation-key" onclick="
+    input(' / ');
+  ">/</button>
+  </p>
+
+  <button class="number-key clear" onclick="
+    // this is the clear button we clear the calculation here to a empty string then save it in the variable 
+    calculation = '';
+    console.log('Cleared\n');
+    console.log(calculation);
+    ShowCalculation(calculation);
+    // then we again save the variables value in the localStorage
+    // Remember to save the calculation here.
+    saveCalculation();
+  ">Clear</button>
+
+  <script src="calculator.js"></script>
+</body>
+</html>

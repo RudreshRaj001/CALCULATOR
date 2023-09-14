@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body{
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.calculation{
+  height: 45px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: gray;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-top: 7px;
+  color: rgb(248, 243, 243);
+}
+.number-key {
+  background-color: rgb(84, 81, 81);
+  color: white;
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.calculation-key {
+  background-color: rgb(245, 177, 5);
+}
+.clear {
+  font-size: 19px;
+}

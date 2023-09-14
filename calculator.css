@@ -40,3 +40,7 @@ body{
 .clear {
   font-size: 19px;
 }
+.note {
+  color: red;
+  font-size: 30px;
+}
